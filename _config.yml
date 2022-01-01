@@ -56,16 +56,21 @@ jekyll-archives:
     category: '/category/:name/'
     
 # Pagination 
-paginate: 6
+paginate: 10
 paginate_path: /page:num/
     
 # Other
 highlighter: rouge
 markdown: kramdown
+# Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
-   syntax_highlighter_opts:
-      disable : true
-
+    # Use GitHub flavored markdown, including triple backtick fenced code blocks
+    input: GFM
+    # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+    syntax_highlighter: rouge
+    syntax_highlighter_opts:
+        # Use existing pygments syntax highlighting css
+        css_class: 'highlight'
 
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)

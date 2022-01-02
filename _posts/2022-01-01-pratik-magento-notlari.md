@@ -110,3 +110,35 @@ $dp->endImportSession();
 ```bash
 php -r 'require "app/Mage.php"; Mage::app()->getCacheInstance()->flush();'
 ```
+
+### Magento cacheleri temizleme (dosya bazlı)
+```bash
+find /srv/magento/var/cache/ -type f -mmin +120 -exec rm {} \;
+find /srv/magento/var/session/ -type f -mmin +120 -exec rm {} \;
+find /srv/magento/var/report/ -mtime +7 -exec rm -f {} \;
+find /srv/magento/var/tmp/ -mtime +1 -exec rm -f {} \;
+```
+
+### Sql ile Magento Kupon kodlarını almak
+> Get Magento coupon codes with sql
+
+```sql
+SELECT coupon_rule_name                         AS 'Promotion Used'
+     , coupon_code                              AS 'Code Used'
+     , COUNT(coupon_code)                       AS 'Times Used / Number of Orders'
+     , SUM(subtotal)                            AS 'Cumulative Price'
+     , SUM(total_paid)                          AS 'Cumulative Paid with Coupon'
+     , AVG(total_paid)                          AS 'Average Order Total (W/  Coupon)'
+     , AVG(subtotal)                            AS 'Average Order Total (W/O Coupon)'
+     , ABS(SUM(discount_amount))                AS 'Cumulative Savings'
+     , (
+        SUM(discount_amount) - SUM(total_paid)
+       )                                        AS 'Cumulative Loss'
+     , CONCAT(ROUND((
+        COUNT(coupon_code) / (SELECT COUNT(*) FROM sales_flat_order s)
+       ) * 100, 1), '%')                        AS 'Percentage'
+FROM     sales_flat_order
+WHERE    coupon_code        IS NOT NULL
+GROUP BY coupon_code
+ORDER BY COUNT(coupon_code) DESC;
+```

@@ -19,3 +19,22 @@ mysqldump --user="kullanici" --password="sifre" database1 | mysql --user "kullan
 ```sql
 SELECT * INTO backedup_tablename FROM original_tablename
 ```
+
+- Birleştirilimiş data tablosu oluşturma
+```sql
+SELECT * INTO mergeddatatable
+FROM
+(
+select * from DB1.dbo.tabledata
+union all
+select * from DB2.dbo.tabledata
+union all
+select * from DB3.dbo.tabledata
+union all
+select * from DB4.dbo.tabledata
+union all
+select * from DB5.dbo.tabledata
+union all
+select * from DB6.dbo.tabledata
+) as t1
+```

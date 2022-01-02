@@ -75,3 +75,40 @@ echo -n "" > alreadyexistfile.txt
 ```bash
 find . -type f ! -iname \S.png -delete
 ```
+
+- İçinde belirli bir kelime geçenleri bul
+      > find files recursivly with specific word in their name
+```bash
+grep -i -r "word_to_search" /folder_destination/*
+```
+
+- uzaktan sunucuya başka bir bağlı olduğun sunucudan dosyayı yükle özel portlar kullanarak
+    > Upload a file to a remote server from remote server with a spesific port
+```bash
+scp -P 22000 root@server1:/server1/file/localtion/file.tar.gz -P 21000 root@server2:/server2/file/localtion/
+```
+
+
+- klasörü ve içindekileri sil
+
+> Delete a folder and its content recursivly
+
+```bash
+
+find /path/to/base/dir/* -type d -ctime +10 -exec rm -rf {} \;
+
+```
+
+> Explanation:
+
+- find: the unix command for finding files / directories / links etc.
+  
+- /path/to/base/dir: the directory to start your search in.
+  
+- -type d: only find directories
+
+- -ctime +10: only consider the ones with modification time older than 10 days
+
+- -exec ... \;: for each such result found, do the following command in ...
+
+- rm -rf {}: recursively force remove the directory; the {} part is where the find result gets substituted into from the previous part.

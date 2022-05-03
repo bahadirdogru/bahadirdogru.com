@@ -4,7 +4,7 @@ title:  "Sık Kullandığım Bash Scriptler"
 language: tr
 author: bahadir
 categories: [Linux]
-excerpt: "Bash Scriptler yayınlamak."
+excerpt: "En çok kullandığım Bash Scriptler."
 image: "assets/images/Gnu-bash-logo.png" 
 tags: [Pardus, Debian, Bash, linux]
 toc: false

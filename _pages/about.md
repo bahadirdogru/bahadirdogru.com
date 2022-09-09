@@ -21,7 +21,7 @@ Now I can say that I liked the Debian Social Contract as a debian user. Here you
 I am grateful to [Emrah](http://www.emrah.com) brother for his posts about debian and some stuffs.
 Having found my explanations on the internet at a time of very late night after my research has been difficult to understand; It was an ”incredible experience“.
 
-Nowadays i work at [Damla Yayınevi](http://www.damlayayinevi.com.tr) while I continue to improve myself.
+Nowadays i work at a company while I continue to improve myself.
 
 I would also like to thank Mehmet Kacar, who is a supporter of network information, hardware and system architecture. I learned a lot from him about his experience, IT discipline and control.
 
@@ -42,7 +42,7 @@ Open-Source ruhunu Abim Furkan Tektaştan o da hocası Hasan Tuncer’den almı�
 Şimdiler de debian kullanan biri olarak debian Sosyal Sözleşmesini çok sevdim diyebilirim. Buradan inceleyebilirsiniz:  [https://www.debian.org/social_contract](https://www.debian.org/social_contract)
 Debian ve kurulumu, üzerinde çalıştırılan uygulamalar ve referans alınacak bir örnek olarak notlarını takip ettiğim ve sık sık internet sitesini takip ettiğim [emrah](http://www.emrah.com) abi’ye de şükranlarımı borç bilirim. Araştırmalarımın neticesiz kalması yada anlamakta zorlanmam sonrasında internet sitesinde gecenin bir vakti aradığım açıklamaları bulmuş olmak; “Anlatılmaz yaşanır” bir durumdu.
 
-Şimdilerde [Damla Yayınevi](http://www.damlayayinevi.com.tr)‘nin IT işlerini yaparken bir yandan kendimi geliştirmeye devam ediyorum.
+Şimdilerde bir şirketin Bilişim Teknolojileri işlerini yaparken bir yandan kendimi geliştirmeye devam ediyorum.
 
 Network bilgileri, donanım ve sistem mimari bilgileri ile bana yardımcı olan, destek olan Mehmet Kaçar abime de teşekkürü borç bilirim. Kendisinden tecrübeyi, IT disiplini ve kontrolü hakkında çok şey ögrendim.
 
@@ -65,7 +65,7 @@ Ich bin Emrahs Bruder für seine Beiträge über Debian und einige Sachen dankba
 Nachdem ich meine Erklärungen zu einem Zeitpunkt sehr spät in der Nacht im Internet gefunden hatte, nachdem meine Recherchen schwer zu verstehen waren;
 Es war eine „unglaubliche Erfahrung“.
 
-Heutzutage arbeite ich bei Damla Verlag, während ich mich weiter verbessere.
+Heutzutage arbeite ich bei einer Firma, während ich mich weiter verbessere.
 Ich möchte auch Mehmet Kacar danken, der sich für Netzwerkinformationen, Hardware und Systemarchitektur einsetzt.
 Ich habe viel von ihm über seine Erfahrung, IT-Disziplin und Kontrolle gelernt.
 

@@ -30,7 +30,7 @@ sudo mysqldump -u [user] -p [database_name] > [filename].sql
 
 3- yeni database açıyoruz magento2 isminde.
 ```bash
-mysql -u root -e "CREATE DATABASE magento2 CHARACTER SET utf8 COLLATE utf8_general_ci"; 
+mysql -u root -p -e "CREATE DATABASE magento2 CHARACTER SET utf8 COLLATE utf8_general_ci"; 
 ```
 
 4- magento2 üzerine yedek yazılır.

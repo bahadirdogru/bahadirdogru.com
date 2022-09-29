@@ -51,3 +51,19 @@ mysql -u [user] -e "GRANT ALL PRIVILEGES ON magento2.* TO '[user]'@'localhost';"
 ```bash
 sudo rm /magentodirectory/maintenance.flag
 ```
+
+### EK:
+
+Eğer db'lerin tam olarak aynı olduğundan emin olmak için şöyle bir yöntem var
+
+> If you're working with small databases I've found running mysqldump on both databases with the --skip-comments and --skip-extended-insert options to generate SQL scripts, then running diff on the SQL scripts works pretty well.
+
+> By skipping comments you avoid meaningless differences such as the time you ran the mysqldump command. By using the --skip-extended-insert command you ensure each row is inserted with its own insert statement. This eliminates the situation where a single new or modified record can cause a chain reaction in all future insert statements. Running with these options produces larger dumps with no comments so this is probably not something you want to do in production use but for development it should be fine. I've put examples of the commands I use below:
+
+```bash
+mysqldump --skip-comments --skip-extended-insert -u root -p dbName1>file1.sql
+mysqldump --skip-comments --skip-extended-insert -u root -p dbName2>file2.sql
+diff file1.sql file2.sql
+# vimdiff file1.sql file2.sql
+```
+kaynak: https://stackoverflow.com/a/8718572

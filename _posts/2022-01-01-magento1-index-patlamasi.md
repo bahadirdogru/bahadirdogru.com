@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Magento 1.9 index patlaması"
+title:  "Magento 1.9 index çalışmaması sorunu"
 language: tr
 author: bahadir
 categories: [Magento]
@@ -27,14 +27,27 @@ sudo touch /magentodirectory/maintenance.flag
 ```bash
 sudo mysqldump -u [user] -p [database_name] > [filename].sql
 ```
-3- yeni database açıyoruz magento2 isminde.
 
-4-
+3- yeni database açıyoruz magento2 isminde.
+```bash
+mysql -u root -e "CREATE DATABASE magento2 CHARACTER SET utf8 COLLATE utf8_general_ci"; 
+```
+
+4- magento2 üzerine yedek yazılır.
 ```bash
 mysql -u [user] -p [database_name] < [filename].sql
 ```
-komutu ile magento2 üzerine yedek yazılır.
 
-5- magmi kullananlar için onun ayarlarına girerek database adını magento2 olarak düzenlemek.
+5- mevcut kullanıcımıza bu database için yetki veriyoruz.
+```bash
+mysql -u [user] -e "GRANT ALL PRIVILEGES ON magento2.* TO '[user]'@'localhost';"
+```
+
+6-  /<Magento Install Dir>/app/etc/local.xml; dosyasında database bilgilerini güncelliyoruz.
+
+7- magmi gibi harici kütüphane kullananlar için ayarlarına girerek database adını magento2 olarak düzenlemek gerekir.
 
 6- maintenance.flag'i kaldırmak ve yönetim panelinden tekrar indekslerin tamamını yenilemek.
+```bash
+sudo rm /magentodirectory/maintenance.flag
+```

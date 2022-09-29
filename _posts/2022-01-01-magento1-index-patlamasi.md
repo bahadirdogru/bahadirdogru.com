@@ -47,7 +47,7 @@ mysql -u [user] -e "GRANT ALL PRIVILEGES ON magento2.* TO '[user]'@'localhost';"
 
 7- magmi gibi harici kütüphane kullananlar için ayarlarına girerek database adını magento2 olarak düzenlemek gerekir.
 
-6- maintenance.flag'i kaldırmak ve yönetim panelinden tekrar indekslerin tamamını yenilemek.
+8- maintenance.flag'i kaldırmak ve yönetim panelinden tekrar indekslerin tamamını yenilemek.
 ```bash
 sudo rm /magentodirectory/maintenance.flag
 ```

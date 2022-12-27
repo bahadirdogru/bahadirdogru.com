@@ -17,7 +17,7 @@ group :jekyll_plugins do
     gem 'jekyll-archives'
     gem 'jekyll-figure'
     gem 'jekyll-gist'
-    gem 'bootstrap', '~> 4.4.1'
+    gem 'bootstrap', '~> 4.6'
     gem 'kramdown'
     gem 'rouge'
 end

@@ -1,0 +1,1 @@
+bundle exec jekyll serve --port 80 --host 10.10.10.196;

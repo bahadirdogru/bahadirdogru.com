@@ -1,6 +1,10 @@
 ---
 layout: post
+<<<<<<< Updated upstream
 title:  "Magento 1.9 index çalışmaması sorunu"
+=======
+title:  "Magento 1.9 index çalışmaması"
+>>>>>>> Stashed changes
 language: tr
 author: bahadir
 categories: [Magento]

@@ -37,13 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = `#${id}`;
-        a.textContent = heading.textContent;
         a.className = `toc-${heading.tagName.toLowerCase()}`;
         
         // İkon ekle
         const icon = getIconForHeading(heading.textContent);
         if (icon) {
             a.innerHTML = `${icon} ${heading.textContent}`;
+        } else {
+            a.textContent = heading.textContent;
         }
         
         li.appendChild(a);

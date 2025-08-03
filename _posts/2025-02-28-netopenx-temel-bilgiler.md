@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TEMEL BİLGİLER"
+title: "NetOpenX TEMEL BİLGİLER"
 language: tr
 author: bahadir
 categories: [netopenx]
@@ -267,4 +267,3 @@ namespace NetOpenXTest
 > **Dikkat:** COM nesnelerini kullandıktan sonra mutlaka temizleyin.
 
 > **Bilgi:** Hata yakalama için try-catch-finally bloklarını kullanın.
-

@@ -15,6 +15,45 @@ pre[class*="language-"] {
     line-height: 1.6;
 }
 
+/* Line numbers için ek stil */
+pre[class*="language-"].line-numbers {
+    padding-left: 3.8em;
+    counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+    position: relative;
+    white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    font-size: 100%;
+    left: -3.8em;
+    width: 3em;
+    letter-spacing: -1px;
+    border-right: 2px solid #40FFDC;
+    user-select: none;
+    background: rgba(64, 255, 220, 0.1);
+}
+
+.line-numbers-rows > span {
+    pointer-events: none;
+    display: block;
+    counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+    content: counter(linenumber);
+    color: #40FFDC;
+    display: block;
+    padding-right: 0.8em;
+    text-align: right;
+    font-weight: bold;
+}
+
 /* Kod blokları için başlık */
 .code-header {
     background: #2d3748;

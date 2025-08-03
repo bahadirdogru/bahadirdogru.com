@@ -66,6 +66,40 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// NetOpenX kod bloklarına line-numbers ve C# highlighting ekle
+document.addEventListener('DOMContentLoaded', function() {
+    const codeBlocks = document.querySelectorAll('.article-post pre[class*="language-"]');
+    codeBlocks.forEach(function(block) {
+        // Line numbers ekle
+        if (!block.classList.contains('line-numbers')) {
+            block.classList.add('line-numbers');
+        }
+        
+        // C# syntax highlighting için
+        const codeElement = block.querySelector('code');
+        if (codeElement) {
+            // Sadece dil belirtilmemiş blokları C# yap
+            if ((block.classList.contains('language-') && !block.classList.contains('language-csharp')) || 
+                block.classList.contains('language-clike') ||
+                (!block.className.includes('language-') && codeElement.textContent.includes('using System'))) {
+                
+                // Eski class'ları temizle
+                block.className = block.className.replace(/language-\w*/g, '');
+                codeElement.className = codeElement.className.replace(/language-\w*/g, '');
+                
+                // C# class'larını ekle
+                block.classList.add('language-csharp');
+                codeElement.classList.add('language-csharp');
+                
+                // Prism'e yeniden highlight ettir
+                if (window.Prism) {
+                    Prism.highlightElement(codeElement);
+                }
+            }
+        }
+    });
+});
+
 function getIconForHeading(text) {
     const lowerText = text.toLowerCase();
     if (lowerText.includes('giriş') || lowerText.includes('başlangıç')) return '🚀';

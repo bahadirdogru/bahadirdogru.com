@@ -39,16 +39,28 @@ pre[class*="language-"] {
 /* Responsive kod blokları */
 @media (max-width: 768px) {
     pre[class*="language-"] {
-        margin: 1rem -1rem;
-        border-radius: 0;
+        margin: 1rem 0;
+        border-radius: 8px;
         font-size: 13px;
         overflow-x: auto;
+        max-width: 100%;
     }
     
     .code-header {
-        margin: 1rem -1rem 0;
-        border-radius: 0;
+        margin: 1rem 0 0;
+        border-radius: 8px 8px 0 0;
     }
+}
+
+/* Genel container düzeltmeleri */
+.article-post {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.article-post * {
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 /* İçerik bölümleri için styling */
@@ -167,8 +179,7 @@ pre[class*="language-"] {
     border-radius: 12px;
     padding: 1.5rem;
     margin: 2rem 0;
-    position: sticky;
-    top: 100px;
+    max-width: 100%;
 }
 
 .toc h4 {
@@ -199,12 +210,42 @@ pre[class*="language-"] {
     border-radius: 4px;
     display: block;
     transition: all 0.2s;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .toc a:hover {
     background: #e2e8f0;
     color: #2b6cb0;
     text-decoration: none;
+}
+
+/* TOC Responsive */
+@media (max-width: 768px) {
+    .toc {
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+    
+    .toc h4 {
+        font-size: 1.1em;
+        margin-bottom: 0.5rem;
+    }
+    
+    .toc ul {
+        margin: 0;
+    }
+    
+    .toc li {
+        margin: 0.25rem 0;
+    }
+    
+    .toc a {
+        padding: 0.5rem;
+        font-size: 0.9em;
+    }
 }
 
 /* NetOpenX özel ikonlar */

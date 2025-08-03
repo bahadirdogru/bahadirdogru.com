@@ -5,7 +5,7 @@ language: tr
 author: bahadir
 categories: [netopenx]
 excerpt: "NetOpenX entegrasyonu ile C# kullanarak yapılan işlemlerin detaylı açıklaması ve örnek kodları."
-image: "assets/images/logo.png"
+image: "assets/images/netsis.png"
 tags: [NetOpenX, C#, ERP, Entegrasyon]
 toc: true
 ---
@@ -1603,3 +1603,4 @@ using System;
 > **Dikkat:** COM nesnelerini kullandıktan sonra mutlaka temizleyin.
 
 > **Bilgi:** Hata yakalama için try-catch-finally bloklarını kullanın.
+

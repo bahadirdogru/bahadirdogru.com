@@ -21,6 +21,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (headings.length === 0) return;
     
     headings.forEach((heading, index) => {
+        // Gereksiz başlıkları filtrele
+        const headingText = heading.textContent.trim().toLowerCase();
+        const skipHeadings = ['summary', 'özet', 'table of contents', 'içindekiler'];
+        
+        if (skipHeadings.some(skip => headingText.includes(skip))) {
+            return; // Bu başlığı atla
+        }
+        
         // ID ekle
         const id = `heading-${index}`;
         heading.id = id;
@@ -60,13 +68,15 @@ document.addEventListener('DOMContentLoaded', function() {
 function getIconForHeading(text) {
     const lowerText = text.toLowerCase();
     if (lowerText.includes('giriş') || lowerText.includes('başlangıç')) return '🚀';
+    if (lowerText.includes('genel') || lowerText.includes('bakış')) return '📋';
     if (lowerText.includes('kurulum') || lowerText.includes('setup')) return '⚙️';
     if (lowerText.includes('bağlantı') || lowerText.includes('connection')) return '🔗';
     if (lowerText.includes('fatura') || lowerText.includes('invoice')) return '📄';
+    if (lowerText.includes('kod') || lowerText.includes('örnek')) return '💻';
     if (lowerText.includes('kalem') || lowerText.includes('item')) return '📝';
     if (lowerText.includes('hata') || lowerText.includes('error')) return '❌';
-    if (lowerText.includes('örnek') || lowerText.includes('example')) return '💡';
-    if (lowerText.includes('özet') || lowerText.includes('summary')) return '📋';
+    if (lowerText.includes('önemli') || lowerText.includes('dikkat')) return '⚠️';
+    if (lowerText.includes('notlar') || lowerText.includes('bilgi')) return '📝';
     return '▶️';
 }
 </script>

@@ -1,11 +1,10 @@
 ---
-layout: post
+layout: single
 title:  "Pratik Sql Sorguları"
 language: tr
-author: bahadir
 categories: [Linux]
 excerpt: "Sql sorguları"
-image: "assets/images/sql.png" 
+image: "/assets/images/sql.png" 
 tags: [mysql, mssql, sql]
 toc: false
 ---

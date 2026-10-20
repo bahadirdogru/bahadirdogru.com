@@ -1,12 +1,10 @@
 ---
-layout: post
+layout: single
 title:  "Paranın icadından kripto paralara! Bitcoin nedir? Ne değildir?"
 language: tr
 date:   2018-02-26
-author: bahadir
 categories: [ Business, Information Technology]
 excerpt: "Paranın icadından bugüne bitcoinlere varan serüvene bir gözatmak..."
-image: "https://source.unsplash.com/iGYiBhdNTpE/900x300" 
 tags: [Bitcoin, Blockchain, Kriptopara]
 beforetoc: "Paranın icadından bugüne bitcoinlere varan serüvene bir gözatmak bazı
 şeyleri yeniden hatırlamak istedim. Sonrasında da bugünün gündemi olan

@@ -1,155 +1,31 @@
-<!DOCTYPE html>
-{% if page.layout == 'post' %}
-    <html lang="{{page.language}}">
-{%else %}
-    <html lang="{{site.language}}">
-{% endif %}
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+---
+layout: compress
+---
 
-<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+{% include base_path %}
 
-<title>{{ page.title }} | {{site.name}} | {{site.description}}</title>
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
 
-<link rel="alternate" type="application/rss+xml" href="{{site.baseurl}}/feed.xml" />
- 
-{% seo %}
-    
-<link href="{{ site.baseurl }}/assets/css/prism.css" rel="stylesheet">
+  <body>
 
-<!-- Line numbers CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
 
-<link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
-<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
+    {{ content }}
 
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-
-</head>
-
-{% if jekyll.environment == 'production' %}
-    <!-- change your GA id in _config.yml -->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', '{{site.google_analytics}}', 'auto');
-    ga('send', 'pageview');
-    </script>
-{% endif %}
-
-{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-<body>
-	<!-- defer loading of font and font awesome -->
-	<noscript id="deferred-styles">
-		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	</noscript>
-
-<!-- Begin Sidebar Navigation
-================================================== -->
-
-<div class="sidebar">    
-</div>   
-<div class="nav-icon">
-    <div class="hamburger-bar"></div>
-</div>
-<div id="blackover-nav" class="blackover"></div>
-<nav id="menu">
-    <ul>
-        <h3>Navigation</h3>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/categories">Categories</a></li>
-        <li><a href="{{ site.baseurl }}/tags">Tags</a></li>
-        <li><a href="{{ site.baseurl }}/about">About Me</a></li>    
-        <li><a href="{{ site.baseurl }}/contact">Contact Me</a></li> 
-        <li>
-        <a href="https://twitter.com/{{ site.twitter }}" class="fab fa-twitter" rel="nofollow" style="display: contents; font-size: 24px;"></a>
-        <a href="https://gitlab.com/{{ site.gitlab }}" class="fab fa-gitlab" rel="nofollow" style="display: contents; font-size: 24px;"></a>
-        <a href="https://github.com/{{ site.github }}" class="fab fa-github" rel="nofollow" style="display: contents; font-size: 24px;"></a>
-        </li>      
-    </ul>
-</nav>
-
-{% include search-lunr.html %}
-
-
-<!-- End Sidebar Navigation
-================================================== -->
-
-<div class="site-content {% if page.url == '/' %} firstpage {% endif %}">
-
-<div class="container">
-
-    <!-- Begin Site Logo/Name
-    ================================================== -->
-   
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
-    </a>  
-    <!-- End Site Logo/Name
-    ================================================== -->
-   
-
-    <!-- Begin Site Tag
-    ================================================== -->
-    {% if page.url == '/' %}
-        <p class="sitetag">
-            {{ site.description }}
-        </p>
-        <p class="subdesc">
-            {{ site.subdescription }}
-        </p>
-    {% endif %}
-    <!-- End Site Tag
-    ================================================== -->
-
-    <!-- Begin Content
-    ================================================== -->
-    <div class="main-content">
-        {{ content }}
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
     </div>
-    <!-- End Content
-    ================================================== -->
 
-    <!-- Begin Newsletter
-    ================================================== -->
-    {% if site.mailchimp-list %}
-        {% include newsletter.html %}  
-    {% endif %}
-    <!-- End Newsletter
-    ================================================== -->
-    
-</div>
+    {% include scripts.html %}
 
-<!-- Begin Footer
-================================================== -->
-    {% include footer.html %}  
-<!-- End Footer
-================================================== -->
-
-</div> <!-- /.site-content -->
-
-<!-- Scripts (if you need bootstrap.js, please add it yourself. I didn't use it for performance reasons, it was not needed in this theme)
-================================================== -->
-
-<script src="{{ site.baseurl }}/assets/js/prism.js"></script>
-
-<!-- C# syntax highlighting ve line numbers plugin'leri -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-csharp.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
-
-<script src="{{ site.baseurl }}/assets/js/theme.js"></script>
-
-{% if site.lazyimages == "enabled" %}
-<script src="{{ site.baseurl }}/assets/js/lazyload.js"></script>
-{% endif %}
-
-{% if page.layout == 'post' %}
-<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
-{% endif %}
-
-</body>
+  </body>
 </html>

@@ -1,12 +1,10 @@
 ---
-layout: post
+layout: single
 title:  "3 Adımda Film ve Dizi Rehberi"
 language: tr
-author: bahadir
 date:   2016-02-26
 categories: [ Life ]
 excerpt: "interneti nasıl kullanabileceğimizle alakalı anlatacaklarım"
-image: "https://source.unsplash.com/jtmwD4i4v1U/900x300" 
 tags: [Türkçe, Torrent, Film, Dizi]
 beforetoc: "Prism highlighter is a very powerful thing. In this article I'm going to show you what you can actually do with it, some tricks and tips while editing your post. Tocs is also enabled as you can see in summary."
 toc: false

@@ -1,73 +1,37 @@
 ---
-layout: page
-title: About 
-permalink: /about
-comments: false
-# image: assets/images/profile.png
-imageshadow: false
+permalink: /
+title: Hakkında
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+description: Bahadır Doğru. İstanbul’da yazılım geliştirici.
 ---
+
+2014’ten beri açık kaynakta yazıyorum. Masaüstü uygulamalar, web araçları ve küçük kütüphaneler. İstanbul’da yaşıyorum. [edamla](https://github.com/edamla) içindeyim.
+
+1992’de İstanbul’da doğdum. Liseyi Çınar Koleji’nde, üniversiteyi Marmara Üniversitesi’nde Almanca işletme olarak okudum. İşlerin arka planını merak etmek beni felsefeye ve teknolojiye yaklaştırdı. İşin işe yarayan tarafı teknikti; oraya yöneldim.
+
+Bilgisayara babamın öğrettiği GW-BASIC ile başladım. Ardından VB 6 ve .NET geldi. Bir süre bunların yeterli olduğunu sandım. Sonra fark ettim: ekranda gördüğüm şeylerin çoğu ekran koruyucusuydu.
+
+2010’da [Furkan Tektaş](http://www.furkantektas.com) ile tanışınca Linux’a geçtim. Açık kaynak tarafını ondan, o da Hasan Tuncer’den aldığımı düşünürüm. Debian kullanıyorum. [Debian Sosyal Sözleşmesi](https://www.debian.org/social_contract) hâlâ hoşuma gider.
+
+Debian notlarını takip ettiğim [Emrah](http://www.emrah.com)’ın sitesinde, takıldığım bir gecenin sonunda aradığım açıklamayı bulmuştum. Ağ, donanım ve sistem disiplini için de Mehmet Kaçar’a teşekkür ederim.
+
+Bir şirketin bilişim işlerine bakarken öğrenmeye devam ediyorum.
+
 ## English
-Hi, my name is Bahadır Doğru. I was born in 1992 in Istanbul. I studied highschool at Çınar Collage and then Marmara University Business Administration in german language.
-My curiosity to understand the things background has made me more inclined to philosophy and technology. In terms of usefulness, I left the philosophy to devote myself to learning about the technical works.
-You will find in this blog how i think, develop and research. Shortly, you will find my Know-Hows.
 
-After my adventures with Gwbasic, which my father taught me, I started to understand VB 6.0 and .net. As a microsoft-guy and a successful computer user, I noticed later that all these were just Screen Savers.
-In 2010 I met my brother [Furkan Tektaş](http://www.furkantektas.com) and with his help I step into the world of Linux.
-If, as an Ottoman grandson, I would like to describe myself as the so-called in ottoman tradition "Getting Feyz(Soul)";
-The soul of Open-Source was taken by my brother Furkan Tektaş and he took from his teacher Hasan Tuncer. :)
+I’m Bahadır Doğru. I live in Istanbul and I’ve published open source since 2014: desktop applications, web tools, and small libraries. I’m part of [edamla](https://github.com/edamla).
 
-Now I can say that I liked the Debian Social Contract as a debian user. Here you can review: [https://www.debian.org/social_contract](https://www.debian.org/social_contract)
-
-I am grateful to [Emrah](http://www.emrah.com) brother for his posts about debian and some stuffs.
-Having found my explanations on the internet at a time of very late night after my research has been difficult to understand; It was an ”incredible experience“.
-
-Nowadays i work at a company while I continue to improve myself.
-
-I would also like to thank Mehmet Kacar, who is a supporter of network information, hardware and system architecture. I learned a lot from him about his experience, IT discipline and control.
-
-This is it for now, i think.
-With the hope about evolving over time and write more beautiful things..
-
-## Türkçe
-Merhaba ben Bahadır Doğru. 1992 yılında istanbulda doğdum. Lisede özel çınar Koleji’nde üniversitede Marmara üniversitesi Almanca İşletmeyi bölümünde okudum.
-Hep “arka planı” anlama merakım benim felsefeye ve teknolojiye yatkın olmamı sağladı. İşe yararlılık açısından felsefeyi bırakıp kendimi teknik işleri öğrenmeye adadım.
-Bu blogda bunları yaparken neyi nasıl düşündüğümü, geliştirdiğimi ve araştırdığımı. Kısacası “Know-How” larımı bulacaksınız.
-
-Babamın öğrettiği Gwbasic ile bilgisayarı anlamaya başladığım serüvenim sonrasında VB 6.0 .Net öğrenmeye ve araştırmaya sevk etti beni.
-Bir microsoftçu ve başarılı bir bilgisayar kullanıcısı olarak sonradan fark ettim ki aslında tüm bunlar sadece “Ekran Koruyucu” imiş.
-2010 Yılında [Furkan Tektaş](http://www.furkantektas.com) abimle tanışmam ile hep merak ettiğim ama cesaret edemediğim Linux dünyasına adım attım.
-Eğer bir Osmanlı torunu olarak kendimi kadim gelenekte olduğu gibi “feyz almak” diye tabir edilen anlayış ile tarif etmem gerekirse;
-Open-Source ruhunu Abim Furkan Tektaştan o da hocası Hasan Tuncer’den almıştır. :)
-
-Şimdiler de debian kullanan biri olarak debian Sosyal Sözleşmesini çok sevdim diyebilirim. Buradan inceleyebilirsiniz:  [https://www.debian.org/social_contract](https://www.debian.org/social_contract)
-Debian ve kurulumu, üzerinde çalıştırılan uygulamalar ve referans alınacak bir örnek olarak notlarını takip ettiğim ve sık sık internet sitesini takip ettiğim [emrah](http://www.emrah.com) abi’ye de şükranlarımı borç bilirim. Araştırmalarımın neticesiz kalması yada anlamakta zorlanmam sonrasında internet sitesinde gecenin bir vakti aradığım açıklamaları bulmuş olmak; “Anlatılmaz yaşanır” bir durumdu.
-
-Şimdilerde bir şirketin Bilişim Teknolojileri işlerini yaparken bir yandan kendimi geliştirmeye devam ediyorum.
-
-Network bilgileri, donanım ve sistem mimari bilgileri ile bana yardımcı olan, destek olan Mehmet Kaçar abime de teşekkürü borç bilirim. Kendisinden tecrübeyi, IT disiplini ve kontrolü hakkında çok şey ögrendim.
-
-Şimdilik bu kadar sanırım, zamanla tekamül edip daha güzel şeyler yazabilmek ümidiyle..
+I was born in Istanbul in 1992. I went to Çınar Koleji and studied business administration in German at Marmara University. I learned GW-BASIC from my father, then VB 6 and .NET, and moved to Linux in 2010 with help from Furkan Tektaş. I use Debian.
 
 ## Deutsch
-Hallo, ich heiße Bahadır Doğru. Ich wurde 1992 in Istanbul geboren.
-Ich habe an der Çınar Collage und dann an der Marmara Universität Betriebswirtchaftlehre in deutscher Sprache studiert.
-Meine Neugier, die Hintergründe zu verstehen, hat mich mehr zu Philosophie und Technologie geneigt.
-In Bezug auf die Nützlichkeit verließ ich die Philosophie, um mich dem Erlernen der technischen Arbeiten zu widmen.
-In diesem Blog erfahren Sie, wie ich denke, entwickle und forsche. In Kürze finden Sie mein Know-how.
-Nach meinen Abenteuern mit Gwbasic, die mein Vater mir beigebracht hatte, begann ich, VB 6.0 und .net zu verstehen.
-Als Microsoft-Typ und erfolgreicher Computerbenutzer bemerkte ich später, dass dies alles nur Bildschirmschoner waren.
-2010 traf ich meinen Bruder Furkan Tektaş und mit seiner Hilfe betrete ich die Welt von Linux.
-Wenn ich mich als osmanischer Enkel als die sogenannte osmanische Tradition „Bekomme Feyz (Seele-Innere Zufriedenheit)“ bezeichnen möchte; Die Seele von Open-Source wurde von meinem Bruder Furkan Tektaş genommen und er nahm von seinem Lehrer Hasan Tuncer. :)
 
-Jetzt kann ich sagen, dass mir der Debian-Sozialvertrag als Debian-Benutzer gefallen hat. Hier können Sie überprüfen: https://www.debian.org/social_contract
+Ich heiße Bahadır Doğru und lebe in Istanbul. Seit 2014 veröffentliche ich Open-Source-Software: Desktop-Anwendungen, Web-Werkzeuge und kleine Bibliotheken. Ich gehöre zu [edamla](https://github.com/edamla).
 
-Ich bin Emrahs Bruder für seine Beiträge über Debian und einige Sachen dankbar.
-Nachdem ich meine Erklärungen zu einem Zeitpunkt sehr spät in der Nacht im Internet gefunden hatte, nachdem meine Recherchen schwer zu verstehen waren;
-Es war eine „unglaubliche Erfahrung“.
+Ich wurde 1992 in Istanbul geboren, besuchte das Çınar Koleji und studierte Betriebswirtschaft auf Deutsch an der Marmara-Universität. Den Einstieg in den Computer verdanke ich meinem Vater und GW-BASIC; Linux lernte ich 2010 über Furkan Tektaş kennen. Ich benutze Debian.
 
-Heutzutage arbeite ich bei einer Firma, während ich mich weiter verbessere.
-Ich möchte auch Mehmet Kacar danken, der sich für Netzwerkinformationen, Hardware und Systemarchitektur einsetzt.
-Ich habe viel von ihm über seine Erfahrung, IT-Disziplin und Kontrolle gelernt.
+## İletişim
 
-Das ist es für jetzt, denke ich. Mit der Hoffnung, sich im Laufe der Zeit weiterzuentwickeln und schönere Dinge zu schreiben.
-
+[iletisim@bahadirdogru.com](mailto:iletisim@bahadirdogru.com)

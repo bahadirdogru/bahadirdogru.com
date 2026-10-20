@@ -1,0 +1,18 @@
+---
+layout: archive
+title: Arşiv
+permalink: /arsiv/
+author_profile: true
+redirect_from:
+  - /arsiv.html
+---
+
+{% include base_path %}
+
+2014 ile 2022 arasında yayımladığım yazılar.
+
+{% for post in site.posts %}
+  {% unless post.categories contains "netopenx" %}
+    {% include archive-single.html %}
+  {% endunless %}
+{% endfor %}

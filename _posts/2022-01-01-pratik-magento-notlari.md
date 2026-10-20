@@ -1,11 +1,10 @@
 ---
-layout: post
+layout: single
 title:  "Pratik Magento Notları"
 language: tr
-author: bahadir
 categories: [Magento]
 excerpt: "Sık kullandığımız magento notlarının kısa bir özeti."
-image: "assets/images/magento_ecommerce.jpg" 
+image: "/assets/images/magento_ecommerce.jpg" 
 tags: [ecommerce, e-ticaret, magento, shopping]
 toc: false
 ---

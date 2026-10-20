@@ -1,12 +1,11 @@
 ---
-layout: post
+layout: single
 title:  "Debian ve Nginx ile Webserver Kurulumu"
 language: tr
 date:   2021-05-07
-author: bahadir
 categories: [Information Technology]
 excerpt: "Debian işletim sistemi üstünde yönetilebilir nginx sunucu kurmayı ve ayarlamayı anlattım."
-image: "assets/images/how-to-install-nginx-on-debian.jpg" 
+image: "/assets/images/how-to-install-nginx-on-debian.jpg" 
 tags: [Webserver, Nginx, Debian, Cloud, Php, Apache, Mysql, MariaDB]
 beforetoc: "Debian işletim sistemi üstünde yönetilebilir nginx sunucu kurmayı ve ayarlamayı anlattım."
 toc: false

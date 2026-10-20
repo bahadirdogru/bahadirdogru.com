@@ -1,11 +1,10 @@
 ---
-layout: post
+layout: single
 title:  "Magento 1.9 index çalışmaması sorunu"
 language: tr
-author: bahadir
 categories: [Magento]
 excerpt: "Magento index çalışmama sorunu."
-image: "assets/images/magento_ecommerce.jpg" 
+image: "/assets/images/magento_ecommerce.jpg" 
 tags: [magento, mysql, index]
 toc: false
 ---

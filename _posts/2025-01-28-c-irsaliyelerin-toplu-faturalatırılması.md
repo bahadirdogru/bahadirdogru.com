@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: single
 title: "NetOpenX - İrsaliyelerin Toplu Faturalaştırılması"
+permalink: /irsaliyelerin-toplu-faturalastirilmasi-2025-01-28/
 language: tr
-author: bahadir
 categories: [netopenx]
 excerpt: "NetOpenX entegrasyonu ile C# kullanarak yapılan işlemlerin detaylı açıklaması ve örnek kodları."
-image: "assets/images/netsis.png"
+image: "/assets/images/netsis.png"
 tags: [NetOpenX, C#, ERP, Entegrasyon]
 toc: true
 ---

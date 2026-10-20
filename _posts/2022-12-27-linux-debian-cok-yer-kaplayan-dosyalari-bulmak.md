@@ -1,11 +1,10 @@
 ---
-layout: post
+layout: single
 title:  "Linux/Debian Sunucudan Sunucuya Dosya Transfer Etme Kopyalama Nasıl Yapılır?"
 language: tr
-author: bahadir
 categories: [Linux]
 excerpt: "rsync ssh scp gibi protokoller ile sunucudan sunucuya dosya taşıma işlemi."
-image: "assets/images/Gnu-bash-logo.png" 
+image: "/assets/images/Gnu-bash-logo.png" 
 tags: [Pardus, Debian, ubuntu, Bash, linux, sftp, ssh]
 toc: false
 ---

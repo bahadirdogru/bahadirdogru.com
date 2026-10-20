@@ -1,11 +1,10 @@
 ---
-layout: post
+layout: single
 title:  "Linux/Debian Çok Yer Kaplayan Dosyaları Bulmak"
 language: tr
-author: bahadir
 categories: [Linux]
 excerpt: "Silinmesi gereken çok büyük dosyaları bulmak için kullanılan komutlar."
-image: "assets/images/Gnu-bash-logo.png" 
+image: "/assets/images/Gnu-bash-logo.png" 
 tags: [Pardus, Debian, ubuntu, Bash, linux, ncdu, du]
 toc: false
 ---

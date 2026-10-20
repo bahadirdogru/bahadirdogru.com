@@ -1,12 +1,10 @@
 ---
-layout: post
+layout: single
 title:  "MYSQL Database Yedek Oluşturma"
 language: tr
 date:   2021-01-13
-author: bahadir
 categories: [ Information Technology ]
 excerpt: "Aynı sunucu içerisinde mysql ile yedek almak"
-image: "https://source.unsplash.com/fPkvU7RDmCo/900x400" 
 tags:
 - Mysql
 - Yedek

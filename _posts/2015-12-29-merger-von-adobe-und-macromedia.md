@@ -1,12 +1,10 @@
 ---
-layout: post
+layout: single
 title:  "Merger von Adobe und Macromedia"
 language: de
 date:   2015-12-29
-author: bahadir
 categories: [ Business ]
 excerpt: "Macromedia wurde 1992 durch den Zusammenschluss der Unternehmen..."
-image: "https://source.unsplash.com/clN6N30q3sw/900x300" 
 tags: [Deutsch, Merger, BWL]
 beforetoc: "Prism highlighter is a very powerful thing. In this article I'm going to show you what you can actually do with it, some tricks and tips while editing your post. Tocs is also enabled as you can see in summary."
 toc: false

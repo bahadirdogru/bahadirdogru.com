@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: single
+author_profile: true
 title: Comment Policy
 permalink: /comment-policy
 comments: false

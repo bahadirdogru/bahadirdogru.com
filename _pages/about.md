@@ -16,7 +16,7 @@ Bilgisayara babamın öğrettiği GW-BASIC ile başladım. Ardından VB 6 ve .NE
 
 Ağ, donanım ve sistem disiplini hakkında Mehmet Kaçar’dan çok şey öğrendim. Kendisine teşekkür ederim.
 
-Şimdi Damla Yayınevi’nde, Türkiye Basım Yayın Meslek Birliği’nde ve Mediterranean Agency’de yöneticilik yapıyorum.
+Şimdi Damla Yayınevi’nde ve Mediterranean Agency’de yöneticilik yapıyorum. Türkiye Basım Yayın Meslek Birliği yönetim kurulu üyesiyim.
 
 ## English
 
@@ -28,7 +28,7 @@ I started with GW-BASIC, which my father taught me. Then came VB 6 and .NET. Aft
 
 I learned a great deal about networks, hardware, and systems discipline from Mehmet Kaçar. I am grateful to him.
 
-I now hold management roles at Damla Yayınevi, Türkiye Basım Yayın Meslek Birliği, and Mediterranean Agency.
+I now hold management roles at Damla Yayınevi and Mediterranean Agency. I am a board member of Türkiye Basım Yayın Meslek Birliği.
 
 ## Deutsch
 
@@ -40,7 +40,7 @@ Den Einstieg verdanke ich meinem Vater und GW-BASIC. Danach kamen VB 6 und .NET.
 
 Über Netzwerke, Hardware und Systemdisziplin habe ich viel von Mehmet Kaçar gelernt. Ihm danke ich.
 
-Heute arbeite ich in leitender Funktion bei Damla Yayınevi, bei der Türkiye Basım Yayın Meslek Birliği und bei Mediterranean Agency.
+Heute arbeite ich in leitender Funktion bei Damla Yayınevi und bei Mediterranean Agency. Ich bin Vorstandsmitglied der Türkiye Basım Yayın Meslek Birliği.
 
 ## İletişim
 

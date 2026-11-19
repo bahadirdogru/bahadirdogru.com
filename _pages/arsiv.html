@@ -1,18 +1,16 @@
 ---
-layout: archive
-title: Arşiv
+layout: single
+title: Yazılar
 permalink: /arsiv/
-author_profile: true
 redirect_from:
   - /arsiv.html
+description: 2014 ile 2022 arasında yayımladığım yazılar.
 ---
+{%- include writings.html -%}
+<p class="lede">2014 ile 2022 arasında yayımladığım yazılar: Linux, sunucu yönetimi, Magento, SQL ve biraz da bilişim üzerine düşünceler.</p>
 
-{% include base_path %}
-
-2014 ile 2022 arasında yayımladığım yazılar.
-
-{% for post in site.posts %}
-  {% unless post.categories contains "netopenx" %}
-    {% include archive-single.html %}
-  {% endunless %}
-{% endfor %}
+{%- assign years = writings | group_by_exp: "p", "p.date | date: '%Y'" -%}
+{%- for y in years %}
+<h2 class="year">{{ y.name }}</h2>
+{% include post-list.html posts=y.items excerpt=true %}
+{%- endfor %}

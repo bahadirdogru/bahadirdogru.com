@@ -1,7 +1,9 @@
 main:
-  - title: Çalışmalar
+  - title: Projeler
     url: /calismalar/
   - title: Notlar
     url: /notlar/
-  - title: Arşiv
+  - title: Yazılar
     url: /arsiv/
+  - title: Hakkında
+    url: /hakkinda/

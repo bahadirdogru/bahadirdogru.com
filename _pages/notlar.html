@@ -1,16 +1,16 @@
 ---
-layout: archive
+layout: single
 title: Notlar
 permalink: /notlar/
-author_profile: true
 redirect_from:
   - /notlar.html
+description: Logo Netsis NetOpenX ile kart ve fiş aktarmak için C# örnekleri.
 ---
+{%- assign notes = site.categories.netopenx | sort: "title" -%}
+<p class="lede">Logo Netsis NetOpenX için C# örnekleri.</p>
 
-{% include base_path %}
+<aside class="callout">
+  NetOpenX notlarının çoğu <a href="https://netsis.bahadirdogru.com/netopenx/">netsis.bahadirdogru.com</a> sitesine taşındı. Orada daha kapsamlı ve aranabilir hâlde: fatura, irsaliye, belge dönüşümleri, depo, e-belge, REST ve veritabanı şeması. Burada yalnızca o sitede henüz karşılığı olmayan örnekler kaldı.
+</aside>
 
-Logo Netsis NetOpenX ile kart ve fiş aktarmak için tuttuğum C# örnekleri.
-
-{% for post in site.categories.netopenx %}
-  {% include archive-single.html %}
-{% endfor %}
+{% include post-list.html posts=notes %}

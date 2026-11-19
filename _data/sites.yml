@@ -1,0 +1,28 @@
+# bahadirdogru.com ailesindeki alt alan adları.
+# Ana sayfadaki "Siteler" bölümü ve tüm sayfaların altbilgisi buradan beslenir.
+# mark: logodaki harf (proje sitelerindeki kare logo ile aynı biçim).
+
+- name: bdhtml2pdf
+  url: https://bdhtml2pdf.bahadirdogru.com/
+  host: bdhtml2pdf.bahadirdogru.com
+  mark: P
+  icon: /assets/images/sites/bdhtml2pdf.svg
+  tag: Rust · GPL-3.0
+  summary: HTML ve JavaScript’i tarayıcı olmadan vektör PDF’e çeviren, wkhtmltopdf’in modern halefi. Tek küçük süreç.
+  repo: https://github.com/bahadirdogru/bdhtml2pdf
+
+- name: Netsis Dokümantasyonu
+  url: https://netsis.bahadirdogru.com/
+  host: netsis.bahadirdogru.com
+  mark: N
+  tag: ERP · C# · REST
+  summary: Logo Netsis için veritabanı şeması, NetOpenX COM ve NetOpenX REST başvuru belgesi. 700+ tablo, denenmiş kod örnekleri.
+  repo: https://github.com/bahadirdogru/netsis-documentation-examples
+
+- name: T-Soft Dokümantasyonu
+  url: https://tsoft.bahadirdogru.com/
+  host: tsoft.bahadirdogru.com
+  mark: T
+  tag: E-ticaret · API
+  summary: T-Soft REST1, Admin API v3, uygulama platformu, Storefront API ve tema kodlama için Türkçe başvuru belgesi.
+  repo: https://github.com/bahadirdogru/tsoft-documentation-examples

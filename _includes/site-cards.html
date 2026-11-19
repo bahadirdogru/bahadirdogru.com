@@ -1,0 +1,9 @@
+<div class="sites">
+{%- for s in site.data.sites %}
+  <a class="site-card" href="{{ s.url }}">
+    <span class="site-top">{% include mark.html letter=s.mark icon=s.icon px=32 %}<span><strong>{{ s.name }}</strong><small>{{ s.host }}</small></span></span>
+    <span class="site-sum">{{ s.summary }}</span>
+    <span class="site-tag">{{ s.tag }}</span>
+  </a>
+{%- endfor %}
+</div>

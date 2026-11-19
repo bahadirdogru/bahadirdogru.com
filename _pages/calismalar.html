@@ -1,13 +1,13 @@
 ---
-layout: archive
-title: Çalışmalar
+layout: single
+title: Projeler
 permalink: /calismalar/
-author_profile: true
+description: Bahadır Doğru’nun kendi alt alan adında yayındaki siteleri ve açık kaynak depoları.
 ---
+<p class="lede">Kendi alan adında yayında olan siteler ve GitHub’daki açık kaynak depolar.</p>
 
-{% include base_path %}
+<h2>Siteler</h2>
+{% include site-cards.html %}
 
-{% assign projects = site.portfolio | sort: "order" %}
-{% for post in projects %}
-  {% include archive-single.html %}
-{% endfor %}
+<h2>Açık kaynak depolar</h2>
+{% include repo-cards.html %}

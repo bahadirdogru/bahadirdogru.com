@@ -1,24 +1,28 @@
 ---
-permalink: /
 title: Hakkında
-author_profile: true
+permalink: /hakkinda/
 redirect_from:
   - /about/
   - /about.html
-description: Bahadır Doğru.
+description: Bahadır Doğru. 1992 İstanbul doğumlu; yazılım, Linux ve yayıncılık.
 ---
+
+<p class="langs"><a href="#tr">Türkçe</a> · <a href="#en">English</a> · <a href="#de">Deutsch</a></p>
+
+## Türkçe {#tr}
+
 
 2014’ten beri teknoloji ve yazılımla ilgileniyorum. Masaüstü uygulamalar, web araçları ve küçük kütüphaneler. İstanbul’da yaşıyorum.
 
 1992’de İstanbul’da doğdum. Liseyi Çınar Koleji’nde, üniversiteyi Marmara Üniversitesi’nde Almanca işletme olarak okudum. İşlerin arka planını merak etmek beni felsefeye ve teknolojiye yaklaştırdı. İşin işe yarayan tarafı teknikti; oraya yöneldim.
 
-Bilgisayara babamın öğrettiği GW-BASIC ile başladım. Ardından VB 6 ve .NET geldi. Bir süre sonra bunların hiçbir şey olduğunu fark ettim 2010’da [Furkan Tektaş](http://www.furkantektas.com) ile tanışınca Linux’a geçtim. Debian kullanıyorum. [Debian Sosyal Sözleşmesi](https://www.debian.org/social_contract) hâlâ hoşuma gider.
+Bilgisayara babamın öğrettiği GW-BASIC ile başladım. Ardından VB 6 ve .NET geldi. Bir süre sonra bunların hiçbir şey olduğunu fark ettim. 2010’da [Furkan Tektaş](http://www.furkantektas.com) ile tanışınca Linux’a geçtim. Debian kullanıyorum. [Debian Sosyal Sözleşmesi](https://www.debian.org/social_contract) hâlâ hoşuma gider.
 
 Ağ, donanım ve sistem disiplini hakkında Mehmet Kaçar’dan çok şey öğrendim. Kendisine teşekkür ederim.
 
 Şimdi Damla Yayınevi’nde ve Mediterranean Agency’de yöneticilik yapıyorum. Türkiye Basım Yayın Meslek Birliği yönetim kurulu üyesiyim.
 
-## English
+## English {#en}
 
 I have been working with technology and software since 2014. Desktop applications, web tools, and small libraries. I live in Istanbul.
 
@@ -30,7 +34,7 @@ I learned a great deal about networks, hardware, and systems discipline from Meh
 
 I now hold management roles at Damla Yayınevi and Mediterranean Agency. I am a board member of Türkiye Basım Yayın Meslek Birliği.
 
-## Deutsch
+## Deutsch {#de}
 
 Seit 2014 beschäftige ich mich mit Technologie und Software. Desktop-Anwendungen, Web-Werkzeuge und kleine Bibliotheken. Ich lebe in Istanbul.
 

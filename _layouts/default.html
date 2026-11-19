@@ -1,31 +1,99 @@
----
-layout: compress
----
-
-{% include base_path %}
-
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+<html lang="{{ page.lang | default: 'tr' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{%- if page.url == "/" -%}
+  {%- assign title = site.title -%}
+{%- else -%}
+  {%- assign title = page.title | append: " · " | append: site.title -%}
+{%- endif -%}
+{%- assign desc = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 %}
+<title>{{ title | strip_html }}</title>
+<meta name="description" content="{{ desc | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1117" media="(prefers-color-scheme: dark)">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.title | default: site.title | strip_html | escape }}">
+<meta property="og:description" content="{{ desc | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+{%- if page.image %}
+<meta property="og:image" content="{{ page.image | absolute_url }}">
+{%- endif %}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{ site.twitter.username }}">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon-180x180.png">
+<link rel="manifest" href="/images/manifest.json">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
+<link rel="stylesheet" href="/assets/css/site.css?v={{ site.time | date: '%s' }}">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+{%- if page.url == "/" %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"{{ site.author.name }}","url":"{{ site.url }}/","jobTitle":"Yönetici, geliştirici","address":{"@type":"PostalAddress","addressLocality":"İstanbul","addressCountry":"TR"},"sameAs":["https://github.com/{{ site.author.github }}","https://www.linkedin.com/in/{{ site.author.linkedin }}","https://x.com/{{ site.author.twitter }}"]}
+</script>
+{%- endif %}
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe geç</a>
 
-  <body>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="/" aria-label="Ana sayfa">{% include mark.html letter="B" %}<span>Bahadır Doğru</span></a>
+    <nav class="nav" aria-label="Ana menü">
+      {%- if page.collection == "portfolio" -%}
+        {%- assign section = "/calismalar/" -%}
+      {%- elsif page.categories contains "netopenx" -%}
+        {%- assign section = "/notlar/" -%}
+      {%- elsif page.collection == "posts" -%}
+        {%- assign section = "/arsiv/" -%}
+      {%- else -%}
+        {%- assign section = page.url -%}
+      {%- endif %}
+      <ul>
+        {%- for item in site.data.navigation.main %}
+        <li><a href="{{ item.url }}"{% if item.url == section %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    <button class="theme-btn" type="button" aria-label="Tema değiştir" title="Tema değiştir">◐</button>
+  </div>
+</header>
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+<main id="main">
+{{ content }}
+</main>
 
-    {{ content }}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-me">
+      <a class="brand" href="/">{% include mark.html letter="B" px=20 %}<span>bahadirdogru.com</span></a>
+      <p>İstanbul. Açık kaynak araçlar, belgeler ve teknik notlar.</p>
+      <p class="social">
+        <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+        <a href="https://gitlab.com/{{ site.author.gitlab }}">GitLab</a>
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>
+        <a href="https://x.com/{{ site.author.twitter }}">X</a>
+        <a href="mailto:{{ site.author.email }}">E-posta</a>
+        <a href="/feed.xml">RSS</a>
+      </p>
     </div>
+    <div class="foot-sites">
+      <p class="foot-h">Siteler</p>
+      <ul>
+        {%- for s in site.data.sites %}
+        <li><a href="{{ s.url }}">{% include mark.html letter=s.mark icon=s.icon px=16 %}<span>{{ s.host }}</span></a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>
 
-    {% include scripts.html %}
-
-  </body>
+<script src="/assets/js/site.js" defer></script>
+</body>
 </html>

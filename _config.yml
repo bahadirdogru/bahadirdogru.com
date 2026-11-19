@@ -20,16 +20,8 @@ author:
 twitter:
   username: bhdrd
 
-comments:
-  provider:
-
-atom_feed:
-  hide: false
-
-read_more: disabled
-words_per_minute: 160
+words_per_minute: 180
 future: false
-breadcrumbs: false
 
 collections:
   portfolio:
@@ -37,30 +29,12 @@ collections:
     permalink: /:collection/:path/
 
 defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: false
-      share: true
-      related: true
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: false
-      comments: false
+  - scope: { path: "", type: posts }
+    values: { layout: single }
+  - scope: { path: "", type: pages }
+    values: { layout: single }
+  - scope: { path: "", type: portfolio }
+    values: { layout: single }
 
 permalink: /:title/
 
@@ -72,10 +46,6 @@ kramdown:
   hard_wrap: false
   auto_ids: true
   syntax_highlighter: rouge
-
-sass:
-  sass_dir: _sass
-  style: compressed
 
 plugins:
   - jekyll-feed
@@ -101,9 +71,7 @@ exclude:
   - install.sh
   - markdown_generator
   - talkmap
-
-compress_html:
-  clippings: all
-  ignore:
-    envs:
-      - development
+  - site
+  - _draft
+  - node_modules
+  - .jekyll-cache

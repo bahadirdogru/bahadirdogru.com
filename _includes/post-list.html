@@ -1,0 +1,11 @@
+<ul class="list">
+{%- for post in include.posts %}
+  <li>
+    <a href="{{ post.url }}">
+      <span class="t">{{ post.title }}</span>
+      {%- if include.excerpt and post.excerpt %}<span class="d">{{ post.excerpt | strip_html | normalize_whitespace | truncate: 140 }}</span>{% endif %}
+    </a>
+    <span class="when">{% include date.html date=post.date %}</span>
+  </li>
+{%- endfor %}
+</ul>

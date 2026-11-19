@@ -1,0 +1,60 @@
+---
+layout: default
+title: Bahadır Doğru
+description: Bahadır Doğru. Açık kaynak araçlar, ERP ve e-ticaret entegrasyon belgeleri, teknik notlar. İstanbul.
+---
+{%- include writings.html -%}
+{%- assign notes = site.categories.netopenx -%}
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">İstanbul · 2014’ten beri yazılım</p>
+    <h1>Merhaba, ben Bahadır.</h1>
+    <p class="lede">Küçük, işe yarayan yazılımlar yazıyorum: masaüstü araçlar, kütüphaneler ve ERP ile e-ticaret entegrasyonları için başvuru belgeleri. Damla Yayınevi’nde ve Mediterranean Agency’de yöneticilik yapıyorum.</p>
+    <div class="actions">
+      <a class="btn" href="#siteler">Projelere göz at</a>
+      <a class="btn ghost" href="/hakkinda/">Hakkımda</a>
+      <a class="btn ghost" href="https://github.com/{{ site.author.github }}">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="siteler" aria-labelledby="h-siteler">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="h-siteler">Siteler</h2>
+      <p>Her biri kendi alt alan adında yayında, aynı çatı altında.</p>
+    </div>
+    {% include site-cards.html %}
+  </div>
+</section>
+
+<section class="band" aria-labelledby="h-acik">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="h-acik">Açık kaynak</h2>
+      <p><a href="/calismalar/">Tümü →</a></p>
+    </div>
+    {% include repo-cards.html %}
+  </div>
+</section>
+
+<section class="band" aria-labelledby="h-yazi">
+  <div class="wrap two">
+    <div>
+      <div class="sec-head">
+        <h2 id="h-yazi">Yazılar</h2>
+        <p><a href="/arsiv/">Arşiv →</a></p>
+      </div>
+      {% assign recent = writings | slice: 0, 6 %}
+      {% include post-list.html posts=recent %}
+    </div>
+    <div>
+      <div class="sec-head">
+        <h2>Notlar</h2>
+        <p><a href="/notlar/">Tümü →</a></p>
+      </div>
+      <p class="muted">NetOpenX notlarının çoğu artık <a href="https://netsis.bahadirdogru.com/netopenx/">netsis.bahadirdogru.com</a> üzerinde. Orada karşılığı olmayan örnekler burada duruyor.</p>
+      {% include post-list.html posts=notes %}
+    </div>
+  </div>
+</section>

@@ -33,7 +33,9 @@ layout: default
 
     {{ content }}
 
-    {%- if page.collection == "portfolio" and page.link %}
+    {%- if page.collection == "portfolio" and page.site %}
+    <p><a class="btn" href="{{ page.site }}">Siteye git →</a>{% if page.link %} <a class="btn ghost" href="{{ page.link }}">Depoya git →</a>{% endif %}</p>
+    {%- elsif page.collection == "portfolio" and page.link %}
     <p><a class="btn" href="{{ page.link }}">Depoya git →</a></p>
     {%- endif %}
 

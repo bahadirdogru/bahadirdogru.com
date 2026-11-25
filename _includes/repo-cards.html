@@ -1,7 +1,7 @@
 {%- assign projects = site.portfolio | sort: "order" -%}
 <div class="repos">
 {%- for p in projects %}
-  <a class="repo" href="{{ p.link | default: p.url }}">
+  <a class="repo" href="{{ p.site | default: p.link | default: p.url }}">
     <strong>{{ p.title }}</strong>
     <span>{{ p.excerpt | strip_html | normalize_whitespace }}</span>
     {%- if p.stack %}<small>{{ p.stack }}</small>{% endif %}

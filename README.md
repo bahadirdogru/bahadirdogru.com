@@ -16,6 +16,7 @@ Aynı tasarım dilini paylaşan alt alan adları `_data/sites.yml` dosyasındad�
 | --- | --- |
 | bdhtml2pdf.bahadirdogru.com | bahadirdogru/bdhtml2pdf (`docs/`) |
 | vikunja.bahadirdogru.com | bahadirdogru/vikunja-enterprise (`docs/`) |
+| s3manager.bahadirdogru.com | bahadirdogru/S3MANAGER (`docs/`) |
 | netsis.bahadirdogru.com | bahadirdogru/netsis-documentation-examples (`docs/`) |
 | tsoft.bahadirdogru.com | bahadirdogru/tsoft-documentation-examples (`docs/`) |
 

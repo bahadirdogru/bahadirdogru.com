@@ -19,6 +19,14 @@
   summary: Vikunja’nın bağımsız topluluk çatalı. Özel alanlar, iş akışları, onaylar, otomasyon, panolar ve formlar ekler; tek ikili dosya, kendi sunucunuzda.
   repo: https://github.com/bahadirdogru/vikunja-enterprise
 
+- name: S3MANAGER
+  url: https://s3manager.bahadirdogru.com/
+  host: s3manager.bahadirdogru.com
+  mark: S
+  tag: Python · PySide6 · GPL-3.0
+  summary: DigitalOcean Spaces ve diğer S3 uyumlu depolar için Windows, Linux ve macOS’ta çalışan açık kaynak masaüstü dosya yöneticisi.
+  repo: https://github.com/bahadirdogru/S3MANAGER
+
 - name: Netsis Dokümantasyonu
   url: https://netsis.bahadirdogru.com/
   host: netsis.bahadirdogru.com

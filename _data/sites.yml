@@ -11,6 +11,14 @@
   summary: HTML ve JavaScript’i tarayıcı olmadan vektör PDF’e çeviren, wkhtmltopdf’in modern halefi. Tek küçük süreç.
   repo: https://github.com/bahadirdogru/bdhtml2pdf
 
+- name: vikunja-enterprise
+  url: https://vikunja.bahadirdogru.com/
+  host: vikunja.bahadirdogru.com
+  mark: V
+  tag: Go · Vue · AGPL-3.0
+  summary: Vikunja’nın bağımsız topluluk çatalı. Özel alanlar, iş akışları, onaylar, otomasyon, panolar ve formlar ekler; tek ikili dosya, kendi sunucunuzda.
+  repo: https://github.com/bahadirdogru/vikunja-enterprise
+
 - name: Netsis Dokümantasyonu
   url: https://netsis.bahadirdogru.com/
   host: netsis.bahadirdogru.com
